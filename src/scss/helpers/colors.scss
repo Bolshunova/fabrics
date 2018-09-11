@@ -1,0 +1,14 @@
+$colors: (
+  primary-black: #000000,
+  primary-grey: #444444,
+  semi-grey: #333333,
+  dark-grey: #222222,
+  light-grey: #dddddd
+);
+
+@function color($key) {
+  @if map-has-key($map: $colors, $key: $key) {
+    @return map-get($map: $colors, $key: $key);
+  }
+  @return null;
+}

@@ -1,0 +1,20 @@
+.header__wrapper {
+  @extend %wrapper-sett;
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
+}
+
+.main__wrapper {
+  @extend %wrapper-sett;
+  @media screen and (min-width: 1600px) {
+    width: 1272px;
+  }
+}
+
+.footer__wrapper {
+  @extend %wrapper-sett;
+  @media screen and (min-width: 1600px) {
+    width: 1424px;
+  }
+}
