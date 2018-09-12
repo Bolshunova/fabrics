@@ -1,20 +1,20 @@
 .header__wrapper {
   @extend %wrapper-sett;
-  @media screen and (min-width: 1600px) {
-    width: 1600px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
 .main__wrapper {
   @extend %wrapper-sett;
-  @media screen and (min-width: 1600px) {
-    width: 1272px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
 .footer__wrapper {
   @extend %wrapper-sett;
-  @media screen and (min-width: 1600px) {
-    width: 1424px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
