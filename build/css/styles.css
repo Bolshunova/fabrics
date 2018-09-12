@@ -498,7 +498,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
-  list-style: 0;
+  list-style: none;
 }
 
 p,
@@ -509,6 +509,12 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 @media screen and (min-width: 1600px) {
