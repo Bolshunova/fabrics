@@ -517,16 +517,16 @@ img {
   height: auto;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .header__wrapper {
-    width: 1600px;
+    width: 1200px;
   }
 
   .main__wrapper {
-    width: 1272px;
+    width: 1200px;
   }
 
   .footer__wrapper {
-    width: 1424px;
+    width: 1200px;
   }
 }
