@@ -1,9 +1,11 @@
 $colors: (
   primary-black: #000000,
-  primary-grey: #444444,
+  primary-grey: #717171,
   semi-grey: #333333,
   dark-grey: #222222,
-  light-grey: #dddddd
+  light-grey: #dddddd,
+  secondary-grey: #efefef,
+  primary-white: #ffffff
 );
 
 @function color($key) {
