@@ -1,0 +1,238 @@
+.footer__contact-block {
+  background-color: color(secondary-grey);
+}
+
+.contacts {
+  @media screen and (max-width: 320px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 240px;
+  }
+}
+
+.contacts__title {
+  @extend %title-sett;
+  font-family: "CormorantUnicase";
+  font-weight: 500;
+  font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
+}
+
+.contacts__text {
+  @extend %base-text-sett;
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__address {
+  @extend %base-text-sett;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: color(semi-grey);
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 320px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 74px;
+    align-items: flex-start;
+  }
+}
+
+.about-us__title {
+  @extend %title-sett;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+}
+
+.about-us__link {
+  @extend %link-sett;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 320px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 174px;
+    align-items: flex-start;
+  }
+}
+
+.questions__title {
+  @extend %title-sett;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+}
+
+.questions__link {
+  @extend %link-sett;
+}
+
+.join {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 194px;
+  }
+}
+
+.join__title {
+  @extend %title-sett;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+}
+
+.join__inner {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+    padding-left: 12px;
+  }
+}
+
+.join__icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  &:nth-child(1) {
+    margin-right: 18px;
+  }
+}
+
+.news {
+  @media screen and (max-width: 320px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 212px;
+  }
+}
+
+.news__title {
+  @extend %title-sett;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+}
+
+.news__text {
+  @extend %base-text-sett;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+}
+
+.news__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: color(primary-white);
+  padding: 14px 47px;
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
+
+.news__icon {
+  cursor: pointer;
+  width: 18px;
+  padding: 12px;
+  border-right: 0.1px solid color(secondary-grey);
+}
+
+.news__box {
+  display: flex;
+  align-items: center;
+  background-color: color(semi-grey);
+  @media screen and (max-width: 320px) {
+    width: 235px;
+    margin: 0 auto;
+  }
+}
+
+.footer__block {
+  background-color: color(semi-grey);
+  color: color(primary-grey);
+}
+
+.footer__copyright {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 320px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+  }
+}
+
+.copyright-icon {
+  margin-right: 5px;
+}
+
+.pdb-10 {
+  padding-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    padding: 18px 0;
+  }
+}
+
+.inner-block {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 96px 0 72px;
+  }
+}

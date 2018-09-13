@@ -376,6 +376,53 @@ template {
 .footer__wrapper {
   margin: 0 auto;
   width: 320px;
+  box-sizing: border-box;
+  padding: 10px 10px 20px 10px;
+}
+
+.contacts__title,
+.about-us__title,
+.questions__title,
+.join__title,
+.news__title {
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.contacts__text,
+.contacts__address,
+.news__text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333333;
+}
+
+.about-us__link,
+.questions__link {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 24px;
+  text-decoration: none;
+  color: #333333;
+}
+
+.about-us__link::after,
+.questions__link::after {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 1px;
+  background-color: #333333;
+}
+
+.about-us__link:hover::after,
+.questions__link:hover::after {
+  display: block;
 }
 
 @font-face {
@@ -517,7 +564,140 @@ img {
   height: auto;
 }
 
+.footer__contact-block {
+  background-color: #efefef;
+}
+
+.contacts__title {
+  font-family: "CormorantUnicase";
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #333333;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us__title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions__title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.join {
+  margin-bottom: 20px;
+}
+
+.join__title {
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.join__inner {
+  display: flex;
+  justify-content: center;
+}
+
+.join__icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.join__icon:nth-child(1) {
+  margin-right: 18px;
+}
+
+.news__title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.news__text {
+  margin-bottom: 10px;
+}
+
+.news__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 14px 47px;
+}
+
+.news__icon {
+  cursor: pointer;
+  width: 18px;
+  padding: 12px;
+  border-right: 0.1px solid #efefef;
+}
+
+.news__box {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+}
+
+.footer__block {
+  background-color: #333333;
+  color: #717171;
+}
+
+.footer__copyright {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright-icon {
+  margin-right: 5px;
+}
+
+.pdb-10 {
+  padding-bottom: 10px;
+}
+
 @media screen and (min-width: 1200px) {
+  .about-us__link,
+  .questions__link {
+    font-size: 12px;
+    line-height: 1.2;
+    height: 22px;
+  }
+
   .header__wrapper {
     width: 1200px;
   }
@@ -528,5 +708,117 @@ img {
 
   .footer__wrapper {
     width: 1200px;
+  }
+
+  .contacts {
+    width: 240px;
+  }
+
+  .contacts__title {
+    margin-bottom: 30px;
+  }
+
+  .contacts__text {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__address {
+    font-size: 12px;
+  }
+
+  .about-us {
+    width: 74px;
+    align-items: flex-start;
+  }
+
+  .about-us__title {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+
+  .questions {
+    width: 174px;
+    align-items: flex-start;
+  }
+
+  .questions__title {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+
+  .join {
+    width: 194px;
+  }
+
+  .join__title {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+
+  .join__inner {
+    justify-content: left;
+    padding-left: 12px;
+  }
+
+  .news {
+    width: 212px;
+  }
+
+  .news__title {
+    font-size: 18px;
+    margin-bottom: 34px;
+  }
+
+  .news__text {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .news__btn {
+    font-size: 12px;
+  }
+
+  .footer__copyright {
+    font-size: 12px;
+  }
+
+  .pdb-10 {
+    padding: 18px 0;
+  }
+
+  .inner-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 96px 0 72px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contacts {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .about-us {
+    margin-bottom: 20px;
+  }
+
+  .questions {
+    margin-bottom: 20px;
+  }
+
+  .news {
+    text-align: center;
+  }
+
+  .news__box {
+    width: 235px;
+    margin: 0 auto;
+  }
+
+  .footer__copyright {
+    text-align: center;
   }
 }
