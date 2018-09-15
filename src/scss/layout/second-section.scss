@@ -1,0 +1,29 @@
+.second-section{
+    margin-bottom: 40px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 53px;
+    }
+}
+.textblock{
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        width: 845px;
+        margin: 0 auto;
+        margin-bottom: 126px;
+    }
+}
+.textblock_title{
+    @include font_style('Roboto', 12px, 500, 14px , uppercase, map-get($map: $colors, $key: semi-grey));
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 28px;
+    }
+}
+.textblock_information{
+    @include font_style('Roboto', 18px, 300, 30px , none, map-get($map: $colors, $key: section-text));
+}
+.italic-bold{
+    @include font_style('Roboto', 18px, 400, 25px , none, map-get($map: $colors, $key: section-text));
+    font-style: italic;
+}

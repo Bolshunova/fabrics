@@ -5,7 +5,8 @@ $colors: (
   dark-grey: #222222,
   light-grey: #dddddd,
   secondary-grey: #efefef,
-  primary-white: #ffffff
+  primary-white: #ffffff,
+  section-text: #444444
 );
 
 @function color($key) {
