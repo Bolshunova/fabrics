@@ -690,6 +690,44 @@ img {
   padding-bottom: 10px;
 }
 
+.second-section {
+  margin-bottom: 40px;
+}
+
+.textblock {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.textblock_title {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.textblock_information {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none;
+  color: #444444;
+}
+
+.italic-bold {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: none;
+  color: #444444;
+  font-style: italic;
+}
+
 @media screen and (min-width: 1200px) {
   .about-us__link,
   .questions__link {
@@ -792,6 +830,20 @@ img {
     justify-content: space-between;
     align-items: baseline;
     padding: 96px 0 72px;
+  }
+
+  .second-section {
+    margin-bottom: 53px;
+  }
+
+  .textblock {
+    width: 845px;
+    margin: 0 auto;
+    margin-bottom: 126px;
+  }
+
+  .textblock_title {
+    margin-bottom: 28px;
   }
 }
 
