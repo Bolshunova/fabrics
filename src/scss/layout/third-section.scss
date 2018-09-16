@@ -54,6 +54,9 @@
     }
 }
 .third-section_block {
+    @media screen and (max-width: 320px){
+        text-align: center;
+    }
     @media screen and (min-width: 1200px) {
         height: 657px;
         width: 554px;
