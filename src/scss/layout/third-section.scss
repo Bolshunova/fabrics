@@ -1,0 +1,103 @@
+.third-section{
+    margin-bottom: 40px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 35px;
+        padding-top: 15px;
+    }
+}
+.textblock{
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        width: 845px;
+        margin: 0 auto;
+        margin-bottom: 126px;
+    }
+}
+.textblock_title{
+    @include font_style('Roboto', 12px, 500, 14px , uppercase, map-get($map: $colors, $key: semi-grey));
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 28px;
+    }
+}
+.textblock_information{
+    @include font_style('Roboto', 18px, 300, 30px , none, map-get($map: $colors, $key: section-text));
+}
+.italic-bold{
+    @include font_style('Roboto', 18px, 400, 25px , none, map-get($map: $colors, $key: section-text));
+    font-style: italic;
+}
+.textblock_link {
+    @include font_style('Roboto', 12px, 500, 15px , none, map-get($map: $colors, $key: semi-grey));
+    padding-top: 28px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: transparent;
+      }
+      &:hover::after {
+        background-color: color(semi-grey);
+      }
+}
+.third-section_block_wrap {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+.third-section_block {
+    @media screen and (min-width: 1200px) {
+        height: 657px;
+        width: 554px;
+        box-sizing: border-box;
+    }
+    
+}
+.marg_r {
+    @media screen and (min-width: 1200px) {
+    margin-right: 72px;
+    }   
+}
+.text_wrap {
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        padding: 195px 80px 0 140px;
+    }
+}
+.img_wrap {
+    display: inline-block;
+    text-align: center; 
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+.img_wrap, .third-section_img_block {
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+.third-section_img_block, .third-section_3img_block, .third-section_block_wrap {
+    display: inline-block;
+}
+
+.third-section_3img_block {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.third-section_img_block_item:not(:last-child) {
+    margin-bottom: 9px;
+}

@@ -728,6 +728,90 @@ img {
   font-style: italic;
 }
 
+.third-section {
+  margin-bottom: 40px;
+}
+
+.textblock {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.textblock_title {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.textblock_information {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none;
+  color: #444444;
+}
+
+.italic-bold {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: none;
+  color: #444444;
+  font-style: italic;
+}
+
+.textblock_link {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-transform: none;
+  color: #333333;
+  padding-top: 28px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.textblock_link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+}
+
+.textblock_link:hover::after {
+  background-color: #333333;
+}
+
+.img_wrap {
+  display: inline-block;
+  text-align: center;
+}
+
+.img_wrap,
+.third-section_img_block {
+  margin-bottom: 20px;
+}
+
+.third-section_img_block,
+.third-section_3img_block,
+.third-section_block_wrap {
+  display: inline-block;
+}
+
+.third-section_img_block_item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 @media screen and (min-width: 1200px) {
   .about-us__link,
   .questions__link {
@@ -844,6 +928,59 @@ img {
 
   .textblock_title {
     margin-bottom: 28px;
+  }
+
+  .third-section {
+    margin-bottom: 35px;
+    padding-top: 15px;
+  }
+
+  .textblock {
+    width: 845px;
+    margin: 0 auto;
+    margin-bottom: 126px;
+  }
+
+  .textblock_title {
+    margin-bottom: 28px;
+  }
+
+  .third-section_block_wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .third-section_block {
+    height: 657px;
+    width: 554px;
+    box-sizing: border-box;
+  }
+
+  .marg_r {
+    margin-right: 72px;
+  }
+
+  .text_wrap {
+    text-align: left;
+    padding: 195px 80px 0 140px;
+  }
+
+  .img_wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .img_wrap,
+  .third-section_img_block {
+    margin-bottom: 0;
+  }
+
+  .third-section_3img_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
