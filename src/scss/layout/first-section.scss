@@ -1,0 +1,50 @@
+.first-section {
+  text-align: center;
+  padding: 50px 0px 40px;
+
+  @media screen and (min-width: 1200px) {
+    @include flex_block(flex, space-between, center);
+    padding-bottom: 230px;
+  }
+
+  &__title {
+    @include font_style('Roboto', 14px, 400, 16px, uppercase, map-get($map: $colors, $key: semi-grey));
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__subtitle {
+    @include font_style('Roboto', 23px, 300, 60px, map-get($map: $colors, $key: semi-grey));
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__img {
+    width: 290px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+      @include flex_block(flex, space-between);
+      width: 900px;
+      margin: 0;
+    }
+  }
+
+  &__img-item {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

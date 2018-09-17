@@ -1,0 +1,222 @@
+.header {
+  background-color: color(dark-grey);
+
+  &__wrapper {
+    padding: 0;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      @include flex_block(flex, space-between, center);
+      width: 1200px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: 1600px;
+    }
+  }
+
+  &__btn {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    z-index: 20;
+    top: 36px;
+    left: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      width: 17px;
+      height: 3px;
+    }
+
+    &::before {
+      border-top: 1px solid color(light-grey);
+    }
+
+    &::after {
+      border-bottom: 1px solid color(light-grey);
+    }
+
+    &:checked::after {
+      transform: rotate(45deg) translate(-1.5px, -3px);
+    }
+
+    &:checked::before {
+      transform: rotate(-45deg) translate(-1.5px, 3px);
+    }
+
+    &~nav {
+      @media screen and (max-width: 1199px) {
+        transition: height 600ms ease;
+        height: 0;
+        top: 90px;
+        overflow: hidden;
+      }
+    }
+
+    &:checked~nav {
+      transition: height 600ms ease;
+      height: 300px;
+    }
+  }
+
+  &__logo {
+    @include font_style('CormorantUnicase', 28px, 500, 80px, uppercase, map-get($map: $colors, $key: light-grey));
+    text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+
+  &__nav {
+    @media screen and (min-width: 1200px) {
+      @include flex_block(flex, space-between);
+      width: 800px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: 1200px;
+    }
+  }
+}
+
+.menu {
+  padding: 20px 0px;
+  margin: 0 auto;
+  width: 85%;
+  border-top: 1px solid color(semi-grey);
+  border-bottom: 1px solid color(semi-grey);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    @include flex_block(flex, space-between);
+    padding: 0px;
+    width: 474px;
+    margin: 0;
+    border: 0;
+  }
+
+  &__link {
+    @include font_style('Roboto', 16px, 300, 36px, uppercase, map-get($map: $colors, $key: light-grey));
+    position: relative;
+    text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      content: "";
+      opacity: 0;
+      height: 1px;
+      width: 100%;
+      background-color: color(light-grey);
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+.caret_down {
+  padding: 0;
+  border: none;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.registration {
+  @include flex_block(flex, center, center);
+  margin: auto;
+  width: 270px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  &__account {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__shop {
+    @include flex_block(flex, space-between);
+    position: relative;
+    width: 60px;
+  }
+
+  &__icons {
+    position: relative;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__active {
+    display: none;
+    padding-left: 7px;
+
+    & a {
+      @include font_style('Roboto', 16px, 300, 20px, none, map-get($map: $colors, $key: light-grey));
+      text-decoration: none;
+
+      @media screen and (min-width: 1200px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  &__active-signin {
+    margin-right: 10px;
+  }
+
+  &__active-signup {
+    padding-left: 14px;
+    border-left: 1px solid color(section-text);
+  }
+}
+
+.heart-icon {
+  display: none;
+}
+
+.shop-icon:first-child:hover .heart-icon {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+}
+
+.shop-icon::after {
+  position: absolute;
+  bottom: 12px;
+  padding-left: 5px;
+  content: "0";
+  width: 14px;
+  height: 14px;
+  @include font_style('Roboto', 10px, 300, 12px, none, map-get($map: $colors, $key: light-grey));
+}
+
+.registration__account:hover .registration__active {
+  display: block;
+}
