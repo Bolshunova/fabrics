@@ -6,3 +6,9 @@
     text-transform: $ftrans;
     color: $fcolor;
 }
+
+@mixin flex_block($display: 'flex', $just_cont: '', $align-items: ''){
+    display: $display;
+    justify-content: $just_cont;
+    align-items: $align-items;
+}
