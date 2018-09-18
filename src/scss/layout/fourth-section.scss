@@ -1,0 +1,102 @@
+.fourth-section {
+    @media screen and (min-width: 1200px) {
+        width: 1040px;
+        padding-bottom: 175px;
+        margin: 100px auto 0;
+        display: flex;
+    }
+}
+.box-information {
+    @media screen and (min-width: 1200px) {
+        flex-basis: 50%;
+    }
+}
+.sec-img-box {
+    display: inline-block;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    margin-bottom: 15px;
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+        margin: 35px 0 52px;
+    }
+}
+.text-box-info {
+    text-align: center;
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+            width: 360px;
+    }
+}
+.title-name {
+    @include font_style('Roboto', 12px, 500, 14px , uppercase, map-get($map: $colors, $key: semi-grey));
+        margin-bottom: 9px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+    }
+}
+.information-box {
+    @include font_style('Roboto', 18px, 300, 30px , none, map-get($map: $colors, $key: section-text));
+}
+.textblock_link {
+    @include font_style('Roboto', 12px, 500, 15px , none, map-get($map: $colors, $key: semi-grey));
+    padding-top: 28px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: transparent;
+      }
+      &:hover::after {
+        background-color: color(semi-grey);
+      }
+}
+.box-list-img {
+    @media screen and (max-width: 400px) {
+        width:267px;
+        margin: 0 auto;
+        }
+    @media screen and (min-width: 1200px) {
+        flex-basis: 50%;
+        }      
+}
+.img-box-list {
+    @media screen and (min-width: 1200px) {
+        position: relative;
+    }
+}
+.photo-list {
+    margin-bottom: 9px;
+        @media screen and (min-width: 1200px) {
+            position: absolute;
+            margin-bottom: 0px;
+    }
+}
+.picture1 {
+    @media screen and (min-width: 1200px) {
+        width: 313px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        }
+}
+.picture2 {
+    @media screen and (min-width: 1200px) {
+        width: 267px;
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        }
+}
+.picture3 {
+    @media screen and (min-width: 1200px) {
+        width: 271px;
+        top: 379px;
+        left: 250px;
+        }
+}
