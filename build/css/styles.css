@@ -1035,6 +1035,66 @@ img {
   margin-bottom: 10px;
 }
 
+.sec-img-box {
+  display: inline-block;
+  text-align: center;
+  padding: 0 50px 0 50px;
+  margin-bottom: 15px;
+}
+
+.text-box-info {
+  text-align: center;
+}
+
+.title-name {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 9px;
+}
+
+.information-box {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: none;
+  color: #444444;
+}
+
+.textblock_link {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-transform: none;
+  color: #333333;
+  padding-top: 28px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.textblock_link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+}
+
+.textblock_link:hover::after {
+  background-color: #333333;
+}
+
+.photo-list {
+  margin-bottom: 9px;
+}
+
 @media screen and (min-width: 1200px) {
   .about-us__link,
   .questions__link {
@@ -1283,6 +1343,64 @@ img {
   .first-section__img-item:not(:last-child) {
     margin-right: 20px;
   }
+
+  .fourth-section {
+    width: 1040px;
+    padding-bottom: 175px;
+    margin: 100px auto 0;
+    display: flex;
+  }
+
+  .box-information {
+    flex-basis: 50%;
+  }
+
+  .sec-img-box {
+    padding: 0;
+    margin: 35px 0 52px;
+  }
+
+  .text-box-info {
+    text-align: left;
+    width: 360px;
+  }
+
+  .title-name {
+    margin-bottom: 40px;
+  }
+
+  .box-list-img {
+    flex-basis: 50%;
+  }
+
+  .img-box-list {
+    position: relative;
+  }
+
+  .photo-list {
+    position: absolute;
+    margin-bottom: 0px;
+  }
+
+  .picture1 {
+    width: 313px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+  .picture2 {
+    width: 267px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+  }
+
+  .picture3 {
+    width: 271px;
+    top: 379px;
+    left: 250px;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -1301,6 +1419,13 @@ img {
     height: 0;
     top: 90px;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .box-list-img {
+    width: 267px;
+    margin: 0 auto;
   }
 }
 
